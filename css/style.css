@@ -1,0 +1,597 @@
+/* The header section starts here */
+
+/* universal selector, used to format the default page style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: black;
+}
+
+.remove-dot {
+  list-style: none;
+}
+
+.nav-bar{
+  display: none;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+#logo {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#logo sub {
+  color: green;
+  font-weight: bolder;
+}
+
+.remove-dot li {
+  padding: 12px 8px;
+}
+
+.remove-dot li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 8px;
+}
+
+.remove-dot li a:hover {
+  border-bottom: 2px solid red;
+  color: #fff;
+}
+
+.icon-style {
+  margin-right: 10px;
+  color: green;
+}
+.back-drop {
+  background-image: url("../assets/pp Background 9.jpg");
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.back-drop-shed {
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(6, 58, 170, 0.11);
+}
+.back-drop-content {
+  color: #fff;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 3px;
+}
+
+.back-drop-content h2 {
+  font-size: 42px;
+  letter-spacing: 18px;
+  font-family: "Roboto slab", serif;
+  font-weight: 900;
+}
+
+.back-drop-content h1 {
+  font-size: 64px;
+  color: rgb(50, 102, 8);
+  font-weight: bolder;
+  padding: 12px 8px;
+}
+
+.back-drop-content h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-family: "Roboto slab", serif;
+  font-weight: 600;
+}
+
+/* Main section area starts here */
+
+ .service-container{
+width: 100%;
+display:flex;
+justify-content: space-around;
+margin-top: 5%;
+ }
+
+ .advert-container{
+   width: 30%;
+ }
+
+ .content-container{
+   width: 60%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+ }
+
+ .advert-container img{
+   width:100%;
+   height: auto;
+   object-fit: cover;
+ }
+
+ .content-card{
+   width: 30%;
+   height: 200px;
+   background-color: white;
+   /* border: 1px solid grey; */
+   border-radius: 20px;
+   box-shadow:2px 2px 8px 2px rgb(221, 215, 215)
+ }
+
+ .content-card h4{
+   text-align: center;
+   padding-top: 15px;
+   color: green;
+   letter-spacing: 2px;
+  
+ }
+
+ .content-card p{
+   text-align: center;
+   margin-right: 15px;
+   margin-left: 15px;
+ }
+
+ .service-header{
+display: flex;
+font-weight: bolder;
+padding-bottom: 3%;
+width: 100%;
+justify-content: center;
+font-size: 30px;
+color: green;
+ }
+
+.first-content{
+  padding-top: 20px;
+}
+
+.first-content h4{
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: green;
+}
+
+.first-content p{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/* About Us Starts here */
+.about-container{
+  /* width: 100%; */
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-container h2{
+font-weight: bolder;
+color: green;
+text-align: center;
+justify-content: center;
+}
+
+.cont-container{
+
+
+}
+
+.conte-box{
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  border:none;
+}
+
+.pics-container{
+width: 30%;
+
+}
+
+.contactus-container{
+  width: 100%;
+  height: 60vh;
+  background-image: url("/assets/world-map.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5%;
+}
+.contactus-shed{
+  width:100%;
+  height: 60vh;
+  background-color: rgba(117, 107, 107, 0.685);
+display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+}
+
+.contactus-img-container{
+  width: 30%;
+}
+
+.contact-us-img-container img{
+  width: 100%;
+  height: auto;
+}
+
+.contactus-form-container{
+  width: 60%;
+}
+
+.contactus-form-container h4{
+color: white;
+padding-bottom: 20px;
+text-align: center;
+font-weight: bolder;
+}
+
+form > input, textarea {
+  outline:none;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form input{
+  height:40px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-form input::placeholder{
+  padding:20px;
+}
+
+.textarea{
+  maxlenght:200;
+  padding-top: 10px;
+}
+.contact-form button{
+  height: 50px;
+  background-color:rgba(15,206,15,0.925);
+border:none;
+border-radius: 5px;
+margin-top: 15px;
+}
+
+.contact-form button:hover{
+  background-color: rgb(135, 197, 151);
+}
+
+.sponsor-container{
+  margin: 5%;
+  display: flex;
+}
+
+.pics-container{
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+  .pics-container h3{
+    padding: 30px;
+    color: green;
+  }
+
+  .footer-content{
+    background-color: rgb(80, 79, 79);
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .iteminfooter p {
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+
+  .copyright-content{
+    color: whitesmoke;
+    padding-right: 30px;
+    
+  }
+
+  @media (max-width:414px) {
+    .service-container{
+      flex-direction:column;
+    }
+    .advert-container{
+      width: 95%;
+      padding: 0px 10px;
+    }
+    nav {
+      background-color: rgb(37, 37, 37);
+    }
+    .nav-bar{
+      display: flex;
+      padding-right: 10px;
+    }
+  
+    .content-container{
+      width: 100%;
+    }
+    .content-card{
+      width: 80%;
+      margin-top: 20px;
+    }
+    .remove-dot li a {
+      display: none;
+      text-decoration: none;
+      color: white;
+      padding: 10px 8px;
+    }
+    .back-drop-content {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .back-drop-content h2 {
+      font-size: 30px;
+      letter-spacing: 10px;
+      font-family: "Roboto slab", serif;
+      font-weight: 800;
+    }
+    .back-drop-content h1 {
+      font-size: 50px;
+      color: rgb(50, 102, 8);
+      font-weight: bolder;
+      padding: 12px 8px;
+    }
+
+    .about-container{
+      /* width: 100%; */
+      padding-top: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .pics-container{
+      width: 30%;
+      padding-top: 40px;
+    }
+    .conte-box{
+      text-align: center;
+      padding-top: 20px;
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      border:none;
+    }
+
+    .contactus-container{
+      width: 100%;
+      height: 80vh;
+      background-image: url("/assets/world-map.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 5%;
+    }
+    .contactus-shed{
+      width:100%;
+      height: 80vh;
+      background-color: rgba(117, 107, 107, 0.685);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    }
+
+    .sponsor-container{
+      margin: 5%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .pics-container{
+      width: 100%;
+      justify-content: space-evenly;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      }
+
+      .footer-content{
+        background-color: rgb(80, 79, 79);
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .iteminfooter p {
+        color: white;
+        padding-left: 30px;
+        padding-bottom: 10px;
+      }
+    
+      .copyright-content{
+        color: whitesmoke;
+        padding-right: 30px;
+        
+      }
+
+  }
+
+  @media (max-width:800px) {
+    .service-container{
+      flex-direction:column;
+    }
+    .advert-container{
+      width: 95%;
+      padding: 0px 10px;
+    }
+    nav {
+      background-color: rgb(37, 37, 37);
+    }
+    .nav-bar{
+      display: flex;
+      padding-right: 10px;
+    }
+  
+    .content-container{
+      width: 100%;
+    }
+    .content-card{
+      width: 80%;
+      margin-top: 20px;
+    }
+    .remove-dot li a {
+      display: none;
+      text-decoration: none;
+      color: white;
+      padding: 10px 8px;
+    }
+    .back-drop-content {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .back-drop-content h2 {
+      font-size: 30px;
+      letter-spacing: 10px;
+      font-family: "Roboto slab", serif;
+      font-weight: 800;
+    }
+    .back-drop-content h1 {
+      font-size: 50px;
+      color: rgb(50, 102, 8);
+      font-weight: bolder;
+      padding: 12px 8px;
+    }
+
+    .about-container{
+      /* width: 100%; */
+      padding-top: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .pics-container{
+      width: 30%;
+      padding-top: 40px;
+    }
+    .conte-box{
+      text-align: center;
+      padding-top: 20px;
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      border:none;
+    }
+
+    .contactus-container{
+      width: 100%;
+      height: 80vh;
+      background-image: url("/assets/world-map.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 5%;
+    }
+    .contactus-shed{
+      width:100%;
+      height: 80vh;
+      background-color: rgba(117, 107, 107, 0.685);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    }
+
+    .sponsor-container{
+      margin: 5%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .pics-container{
+      width: 100%;
+      justify-content: space-evenly;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      }
+
+      .footer-content{
+        background-color: rgb(80, 79, 79);
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .iteminfooter p {
+        color: white;
+        padding-left: 30px;
+        padding-bottom: 10px;
+      }
+    
+      .copyright-content{
+        color: whitesmoke;
+        padding-right: 30px;
+        
+      }
+
+  }
+ 
